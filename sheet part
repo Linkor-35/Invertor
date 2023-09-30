@@ -1,0 +1,17 @@
+'coding by Mikhail.B
+'copyrights BESSENCORP
+
+Try
+	ex_Lenght = SheetMetal.FlatExtentsLength
+	ex_Width = SheetMetal.FlatExtentsWidth
+	If ex_Lenght > ex_Width Then
+		If ex_Lenght > 3000 Then
+			MessageBox.Show("You flat size " & Round(ex_Lenght) & " it`s more when 3000 mm")
+		End If
+	Else
+		If ex_Width > 3000 Then
+			MessageBox.Show("You flat size " & Round(ex_Width) & " it`s more when 3000 mm ")
+		End If
+	End If
+Catch	
+End Try
